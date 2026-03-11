@@ -1,0 +1,9 @@
+<div class="filter-row">
+  @for (f of filters; track f.value) {
+    <button class="filter-btn"
+      [class.active]=""
+      (click)="click(f.value)">
+      {{ f.label }}
+    </button>
+  }
+</div>
