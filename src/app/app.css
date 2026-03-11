@@ -1,0 +1,20 @@
+
+.corners {
+  position: fixed;
+  inset: 20px;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.corners span {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-color: var(--gold);
+  border-style: solid;
+}
+
+.tl { top: 0; left: 0; border-width: 8px 0 0 8px; }
+.tr { top: 0; right: 0; border-width: 8px 8px 0 0; }
+.bl { bottom: 0; left: 0; border-width: 0 0 8px 8px; }
+.br { bottom: 0; right: 0; border-width: 0 8px 8px 0; }

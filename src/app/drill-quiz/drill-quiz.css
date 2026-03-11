@@ -1,0 +1,46 @@
+header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--gold);
+}
+.subtitle {
+  font-style: italic;
+  color: rgba(245,240,232,0.55);
+  font-size: 1.5rem;
+  margin-top: 4px;
+}
+.divider {
+  width: 220px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 14px auto 0;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 560px;
+  height: 3px;
+  background: rgba(200,168,75,0.15);
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.card {
+  background: var(--green); border: 1px solid rgba(200,168,75,0.3); border-radius: 4px;
+  width: 100%; max-width: 560px; padding: 28px; min-height: 360px;
+  display: flex; flex-direction: column; box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}

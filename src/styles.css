@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Oswald:wght@400;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root { --green: #1a4a2e; --gold: #c8a84b; --cream: #f5f0e8; --dark: #0d2318; }
+
+body {
+  background-color: var(--dark);
+  background-image:
+    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(200,168,75,0.05) 39px, rgba(200,168,75,0.05) 40px),
+    repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(200,168,75,0.05) 39px, rgba(200,168,75,0.05) 40px);
+  min-height: 100vh; display: flex; flex-direction: column;
+  align-items: center; padding: 30px 16px 60px;
+  font-family: 'EB Garamond', serif; color: var(--cream);
+}
