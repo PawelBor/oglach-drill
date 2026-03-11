@@ -6,9 +6,10 @@
   </header>
 
   <app-filter-row/>
+  <app-scorebar/>
 
   <div class="progress-bar">
-    <div class="progress-fill"></div>
+    <div class="progress-fill" [style.width]="quiz.progressPct()"></div>
   </div>
 
   <div class="card">

@@ -1,0 +1,19 @@
+.scorebar {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 22px;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.scorebar label {
+  color: rgba(245,240,232,0.5);
+  font-size: 0.72rem;
+  display: block;
+}
+.scorebar span {
+  color: var(--gold);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
