@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { Command } from '../../models/command.model';
+import { Component, inject } from '@angular/core';
+import { Category } from '../../models/command.model';
+import { QuizService } from '../../services/quiz.service';
 
 @Component({
   selector: 'app-filter-row',
@@ -9,7 +10,9 @@ import { Command } from '../../models/command.model';
 })
 export class FilterRow {
 
-  filters: { label: String, value: String }[] = [
+  quiz = inject(QuizService);
+
+  filters: { label: String, value: Category }[] = [
     { label: 'All Commands', value: 'all'},
     { label: 'Foot Drill Commands', value: 'foot' },
     { label: 'Arms Drill Commands', value: 'arms' },
