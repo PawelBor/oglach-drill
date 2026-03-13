@@ -1,0 +1,6 @@
+<div class="end-screen">
+  <div class="end-score">{{ quiz.result()!.score }}/{{ quiz.result()!.total }}</div>
+  <div class="end-title">{{ quiz.result()!.title }}</div>
+  <div class="end-msg">{{ quiz.result()!.message }}</div>
+  <button class="btn-restart" (click)="quiz.start()">Try Again</button>
+</div>

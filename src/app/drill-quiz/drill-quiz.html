@@ -13,7 +13,8 @@
   </div>
 
   <div class="card">
-
+    @if (!quiz.showEnd()) { <app-quiz-card /> }
+    @if (quiz.showEnd())  { <app-end-screen /> }
   </div>
 
 </div>

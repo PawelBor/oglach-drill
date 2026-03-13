@@ -1,0 +1,26 @@
+<div class="question-meta">
+  <button class="badge" (click)="quiz.toggleDirection()">⇄ {{ quiz.badgeLabel() }}</button>
+  <span class="qnum">Q{{ quiz.asked() }}</span>
+</div>
+
+<p class="prompt-label">{{ quiz.promptLabel() }}</p>
+<p class="question-text">{{ quiz.questionText() }}</p>
+
+<div class="options">
+  @for (opt of quiz.options(); track opt.letter) {
+    <button class="option"
+      [class.correct]="opt.state === 'correct'"
+      [class.wrong]="opt.state === 'wrong'"
+      [disabled]="quiz.answered()"
+      (click)="quiz.answer(opt)">
+      <span class="opt-letter">{{ opt.letter }}</span>{{ opt.text }}
+    </button>
+  }
+</div>
+
+<p class="feedback">{{ quiz.feedback() }}</p>
+@if (quiz.answered()) {
+  <button class="btn-next" (click)="quiz.loadQuestion()">
+    {{ quiz.isLast() ? 'See Results →' : 'Next →' }}
+  </button>
+}

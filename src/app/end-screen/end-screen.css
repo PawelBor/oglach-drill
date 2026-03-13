@@ -1,0 +1,41 @@
+.end-screen {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 0;
+}
+
+.end-score {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.end-title { font-size: 1.4rem; font-style: italic; }
+
+.end-msg {
+  font-size: 1rem;
+  color: rgba(245,240,232,0.6);
+  max-width: 340px;
+  line-height: 1.6;
+}
+
+.btn-restart {
+  margin-top: 10px;
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn-restart:hover { background: var(--gold); color: var(--dark); }
